@@ -1,0 +1,1236 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+}
+body h2 {
+  font-size: 40px;
+  padding: 40px 0;
+  color: #ffffff;
+}
+body h2::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 3px;
+  margin: 10px auto;
+  background-color: #e76f51;
+}
+body p, body a {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+}
+body a {
+  color: #264653;
+  text-decoration: none;
+}
+body ul {
+  list-style: none;
+}
+body span.asterisk {
+  color: red;
+  font-weight: bold;
+}
+body main section#hero_all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+body main section#hero_all h1 {
+  font-size: 70px;
+  color: #ffffff;
+}
+body main section#hero_all p.subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+body main section#hero_all div.breadcrumb {
+  display: flex;
+  margin-top: 50px;
+}
+body main section#hero_all div.breadcrumb a {
+  color: #ffffff;
+}
+body main section#hero_all div.breadcrumb a:hover {
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
+}
+body main section#hero_all div.breadcrumb p {
+  margin: 0 20px;
+  color: #ffffff;
+  cursor: default;
+}
+body main section.individuals_hero {
+  background-image: url("../assets/particuliers.png");
+}
+body main section.contact_hero {
+  background-image: url("../assets/particuliers.png");
+}
+body main section.who_i_am_hero {
+  background-image: url("../assets/particuliers.png");
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+header nav div.logo a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #264653;
+}
+header nav div.logo a:hover {
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
+}
+header nav ul.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul.menu li a {
+  display: block;
+  margin: 7px 15px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #264653;
+}
+header nav ul.menu li a:hover {
+  -webkit-text-decoration: underline #e76f51 2px;
+          text-decoration: underline #e76f51 2px;
+  text-underline-offset: 5px;
+}
+header nav label.menu-icon {
+  display: none;
+}
+header nav input#menu-toggle {
+  display: none;
+}
+header nav input#menu-toggle:checked ~ ul.menu {
+  transform: scale(1, 1);
+}
+
+main section#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88.3vh;
+  color: #ffffff;
+  background-image: url("../assets/hero-bg.png");
+  background-size: cover;
+}
+main section#hero h1 {
+  padding: 40px 0;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+main section#hero div.keywords {
+  display: flex;
+  align-items: center;
+}
+main section#hero div.keywords p.keyword {
+  padding: 40px 0;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+main section#hero div.keywords p.point {
+  font-weight: bold;
+  margin: 0 20px;
+  color: #abcc80;
+}
+main section#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 150px;
+}
+main section#about h2 {
+  color: #264653;
+}
+main section#about p.text {
+  text-align: justify;
+  padding: 0 100px;
+  margin-top: 100px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #264653;
+}
+main section#about p.signature {
+  padding: 40px 0;
+  font-size: 20px;
+  font-style: italic;
+  color: #264653;
+}
+main section#cta_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  background-color: #264653;
+}
+main section#cta_services h2 {
+  color: #ffffff;
+}
+main section#cta_services div.services {
+  display: flex;
+  align-items: center;
+}
+main section#cta_services div.services a.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 50px 130px 50px;
+  min-width: 400px;
+  min-height: 200px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid #264653;
+  filter: grayscale(50%);
+}
+main section#cta_services div.services a.service p {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Fira Sans", serif;
+}
+main section#cta_services div.services a.service2 {
+  background-image: url("../assets/professionnels.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+}
+main section#cta_services div.services a.service2:hover {
+  border: 2px solid #ffffff;
+  -webkit-text-decoration: underline #ffffff 3px;
+          text-decoration: underline #ffffff 3px;
+  text-underline-offset: 5px;
+}
+main section#about_naturo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 150px;
+}
+main section#about_naturo h2 {
+  color: #264653;
+}
+main section#about_naturo div.about_naturo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 80px 80px 80px;
+}
+main section#about_naturo div.about_naturo_container p {
+  text-align: justify;
+  width: 700px;
+  margin: 0 50px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #264653;
+}
+main section#about_naturo div.about_naturo_container img {
+  width: 300px;
+  height: 450px;
+  margin: 0 50px;
+  background-size: cover;
+}
+main section#naturo_fundamentals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#naturo_fundamentals h2 {
+  color: #264653;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.img1 {
+  grid-column: 1/2;
+  background-image: url("../assets/sante.png");
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.img2 {
+  grid-column: 2/3;
+  background-image: url("../assets/holistique.png");
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.img3 {
+  grid-column: 1/2;
+  background-image: url("../assets/terrain.png");
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.img4 {
+  grid-column: 2/3;
+  background-image: url("../assets/ecologie.png");
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text h3 {
+  font-size: 32px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text p {
+  padding: 0 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text1 {
+  grid-column: 2/3;
+  background-color: #264653;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #abcc80;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #264653;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.text4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-color: #abcc80;
+}
+main section#infos_consult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+}
+main section#infos_consult h2 {
+  color: #264653;
+}
+main section#infos_consult div.infos_consult_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main section#infos_consult div.infos_consult_container div.consult {
+  margin: 0 100px;
+  text-align: center;
+}
+main section#infos_consult div.infos_consult_container div.consult img {
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+main section#infos_consult div.infos_consult_container div.consult h3 {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  color: #264653;
+}
+main section#infos_consult div.infos_consult_container div.consult p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #264653;
+  border: 1px solid #264653;
+}
+main section#questions_consult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 75px;
+  background-color: #ffd062;
+}
+main section#questions_consult div.question {
+  display: grid;
+  height: 300px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+main section#questions_consult div.question h3 {
+  font-size: 32px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+main section#questions_consult div.question p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+main section#questions_consult div.question div.img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+}
+main section#questions_consult div.question div.img1 {
+  background-image: url("../assets/pourquoi-consulter.png");
+}
+main section#questions_consult div.question div.img2 {
+  background-image: url("../assets/pourquoi-consulter.png");
+}
+main section#calendly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#calendly h2 {
+  color: #264653;
+}
+main section#office {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+main section#office h2 {
+  color: #264653;
+}
+main section#office div.infos_office {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+main section#office div.infos_office iframe {
+  margin: 0 50px;
+}
+main section#office div.infos_office div.adress {
+  margin: 0 50px;
+}
+main section#office div.infos_office div.adress div.text {
+  margin: 50px 0;
+}
+main section#office div.infos_office div.adress div.text h3 {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  color: #264653;
+}
+main section#office div.infos_office div.adress div.text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #264653;
+}
+main section#who {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+}
+main section#who h2 {
+  color: #264653;
+}
+main section#who div.who_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 100px;
+  text-align: center;
+}
+main section#who div.who_container img {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 350px;
+  background-color: red;
+}
+main section#who div.who_container p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #264653;
+}
+main section#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #264653;
+  box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.2);
+}
+main section#quote div.quote_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 300px;
+  color: #ffffff;
+}
+main section#quote div.quote_container img {
+  width: 50px;
+  padding: 0 0 80px 0;
+}
+main section#quote div.quote_container p {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+main section#quote a {
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: 0.3s;
+}
+main section#quote a:hover {
+  background-color: rgba(255, 255, 255, 0.7529411765);
+}
+main section#presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#presentation div.presentation_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #264653;
+}
+main section#presentation div.presentation_container div.img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+main section#presentation div.presentation_container div.img1 {
+  grid-column: 1/2;
+  background-image: url("../assets/particuliers.png");
+}
+main section#presentation div.presentation_container div.img2 {
+  grid-column: 2/3;
+  background-image: url("../assets/particuliers.png");
+}
+main section#presentation div.presentation_container div.img3 {
+  grid-column: 1/2;
+  background-image: url("../assets/particuliers.png");
+}
+main section#presentation div.presentation_container div.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+main section#presentation div.presentation_container div.text h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "Fira Sans", serif;
+}
+main section#presentation div.presentation_container div.text p {
+  padding: 0 100px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+main section#presentation div.presentation_container div.text1 {
+  grid-column: 2/3;
+  background-color: #ffd062;
+}
+main section#presentation div.presentation_container div.text2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #e76f51;
+}
+main section#presentation div.presentation_container div.text3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: #ffd062;
+}
+main section#presentation div.presentation_container div.text3 div.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section#presentation div.presentation_container div.text3 div.logos img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+main section#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+main section#contact h2 {
+  color: #264653;
+}
+main section#contact div.contact_form {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#contact div.contact_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#contact div.contact_form form p.asterisk_text {
+  margin: 0 0 10px 0;
+  padding: 10px 15px;
+  font-size: 12.2px;
+  color: #ffffff;
+  background-color: #264653;
+}
+main section#contact div.contact_form form label {
+  margin: 5px 0;
+  color: #264653;
+}
+main section#contact div.contact_form form input {
+  width: 300px;
+  height: 10px;
+  padding: 5px;
+  color: #264653;
+  border: 1px solid #264653;
+}
+main section#contact div.contact_form form textarea {
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  resize: none;
+  color: #264653;
+  border: 1px solid #264653;
+}
+main section#contact div.contact_form form button {
+  margin: 30px 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #264653;
+  border: none;
+  transition: 0.3s;
+}
+main section#contact div.contact_form form button:hover {
+  cursor: pointer;
+  background-color: rgba(38, 70, 83, 0.8078431373);
+}
+main section#contact div.contact_other {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+main section#contact div.contact_other h3 {
+  margin-bottom: 5px;
+  font-family: "Fira Sans", serif;
+  color: #264653;
+}
+main section#contact div.contact_other p {
+  padding: 10px 15px;
+  color: #ffffff;
+  background-color: #264653;
+}
+main section#contact div.contact_other a {
+  color: #264653;
+}
+main section#contact div.contact_other a:hover {
+  -webkit-text-decoration: underline #abcc80 3px;
+          text-decoration: underline #abcc80 3px;
+}
+main section#contact div.contact_other div.phone_mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section#contact div.contact_other div.phone_mail div {
+  margin: 5px 50px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+  background-color: #ffffff;
+  box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.3);
+}
+footer a.logo {
+  font-size: 25px;
+}
+footer a.logo:hover {
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
+}
+footer div.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div.links a {
+  margin: 0 15px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #264653;
+  transition: 0.3s;
+}
+footer div.links a:hover {
+  background-color: rgba(38, 70, 83, 0.8078431373);
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin: 0 15px;
+}
+footer ul li a {
+  color: #264653;
+}
+footer ul li a:hover {
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  header nav label.menu-icon {
+    display: block;
+    color: #264653;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  header nav ul.menu {
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    top: 61px;
+    left: -41px;
+    z-index: 1;
+    background-color: #ffffff;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    border-top: 3px solid #264653;
+  }
+  header nav ul.menu li {
+    margin: 15px 0;
+  }
+  header nav ul.menu li a {
+    margin-left: 12px;
+    color: #264653;
+  }
+  main section#questions_consult div.question div.img {
+    height: 500px;
+  }
+  main section#questions_consult div.question div.text p {
+    padding: 0 50px;
+  }
+  main section#who {
+    padding: 0 0;
+  }
+  main section#quote div.quote_container {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  main section#about {
+    padding: 0;
+  }
+  main section#about p.text {
+    font-size: 16px;
+  }
+  main section#cta_services {
+    padding: 0 50px;
+  }
+  main section#cta_services div.services {
+    flex-direction: column;
+  }
+  main section#cta_services div.services a.service {
+    margin: 5px 0 50px 0;
+    min-width: 500px;
+    min-height: 400px;
+  }
+  main section#cta_services div.services a.service p {
+    font-size: 40px;
+  }
+  main section#about_naturo div.about_naturo_container {
+    flex-direction: column;
+  }
+  main section#about_naturo div.about_naturo_container p {
+    text-align: center;
+    margin: 0 0 50px 0;
+    width: 100%;
+    font-size: 16px;
+  }
+  main section#about_naturo div.about_naturo_container img {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+  main section#infos_consult {
+    padding: 0 50px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult {
+    margin: 0;
+    padding: 30px;
+  }
+  main section#questions_consult div.question {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  main section#questions_consult div.question div.text h3 {
+    margin: 0;
+  }
+  main section#questions_consult div.question div.text p {
+    padding: 50px;
+    font-size: 16px;
+  }
+  main section#questions_consult div.question div.img {
+    display: none;
+  }
+  main section#calendly {
+    margin-bottom: 25px;
+  }
+  main section#office {
+    padding: 0 50px;
+  }
+  main section#office div.infos_office {
+    flex-direction: column;
+  }
+  main section#contact {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+  main section#contact div.contact_other {
+    flex-direction: column;
+  }
+  main section#contact div.contact_other div {
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main section#hero h1 {
+    font-size: 36px;
+  }
+  main section#hero div.keywords p.keyword {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  main section#hero div.keywords p.point {
+    margin: 0 10px;
+  }
+  main section#about {
+    padding: 0 50px;
+  }
+  main section#about h2 {
+    font-size: 32px;
+  }
+  main section#about p.text {
+    font-size: 16px;
+  }
+  main section#about p.signature {
+    font-size: 18px;
+  }
+  main section#cta_services {
+    padding: 0 50px;
+  }
+  main section#cta_services h2 {
+    font-size: 32px;
+  }
+  main section#cta_services div.services {
+    flex-direction: column;
+  }
+  main section#cta_services div.services a.service {
+    margin: 5px 0 50px 0;
+    min-width: 350px;
+    min-height: 250px;
+  }
+  main section#cta_services div.services a.service p {
+    font-size: 40px;
+  }
+  main section#about_naturo h2 {
+    font-size: 32px;
+  }
+  main section#about_naturo div.about_naturo_container {
+    flex-direction: column;
+    padding: 0 0 50px 0;
+  }
+  main section#about_naturo div.about_naturo_container p {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+  main section#about_naturo div.about_naturo_container img {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+  main section#naturo_fundamentals h2 {
+    font-size: 32px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container {
+    display: flex;
+    flex-direction: column;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container img.img {
+    display: none;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.text {
+    padding: 25px 0;
+  }
+  main section#infos_consult h2 {
+    font-size: 32px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult {
+    margin: 25px 0;
+  }
+  main section#infos_consult div.infos_consult_container div.consult img {
+    width: 90px;
+    height: 90px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult h3 {
+    font-size: 24px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult p {
+    font-size: 16px;
+  }
+  main section#questions_consult {
+    margin-top: 25px;
+  }
+  main section#questions_consult div.question div.text h3 {
+    font-size: 22px;
+  }
+  main section#questions_consult div.question div.text p {
+    padding: 50px 50px 0 50px;
+    font-size: 15px;
+  }
+  main section#calendly h2 {
+    font-size: 32px;
+  }
+  main section#office h2 {
+    font-size: 32px;
+  }
+  main section#office div.infos_office iframe {
+    width: 100%;
+  }
+  main section#who {
+    padding: 0 50px;
+  }
+  main section#who div.who_container {
+    margin: 0;
+    flex-direction: column;
+  }
+  main section#who div.who_container img {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 300px;
+  }
+  main section#who div.who_container p {
+    padding: 0;
+  }
+  main section#quote div.quote_container {
+    padding: 50px 50px;
+  }
+  main section#quote div.quote_container img {
+    padding: 0 0 150px 0;
+  }
+  main section#quote div.quote_container p {
+    font-size: 22px;
+  }
+  main section#presentation div.presentation_container {
+    display: flex;
+    flex-direction: column;
+  }
+  main section#presentation div.presentation_container img.img {
+    display: none;
+  }
+  main section#presentation div.presentation_container div.text {
+    padding: 25px 0;
+  }
+  main section#contact div.contact_other h3 {
+    font-size: 24px;
+  }
+  main section#contact div.contact_other p {
+    font-size: 16px;
+  }
+  main section#contact div.contact_other div.adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main section#contact div.contact_other div.adress iframe {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main section#hero h1 {
+    font-size: 28px;
+  }
+  main section#hero div.keywords p.keyword {
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 0 5px;
+  }
+  main section#hero div.keywords p.point {
+    margin: 0 5px;
+  }
+  main section#about {
+    padding: 0 20px;
+  }
+  main section#about h2 {
+    font-size: 24px;
+  }
+  main section#about p.text {
+    font-size: 14px;
+  }
+  main section#about p.signature {
+    font-size: 16px;
+  }
+  main section#cta_services {
+    padding: 0 50px;
+  }
+  main section#cta_services h2 {
+    font-size: 24px;
+  }
+  main section#cta_services div.services {
+    flex-direction: column;
+  }
+  main section#cta_services div.services a.service {
+    margin: 5px 0 50px 0;
+    min-width: 300px;
+    min-height: 200px;
+  }
+  main section#cta_services div.services a.service p {
+    font-size: 40px;
+  }
+  main section#about_naturo {
+    padding: 0 20px;
+  }
+  main section#about_naturo h2 {
+    font-size: 24px;
+  }
+  main section#about_naturo div.about_naturo_container {
+    flex-direction: column;
+    padding: 0 0 50px 0;
+  }
+  main section#about_naturo div.about_naturo_container p {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+  }
+  main section#about_naturo div.about_naturo_container img {
+    width: 250px;
+    height: 350px;
+    margin: 0;
+  }
+  main section#naturo_fundamentals h2 {
+    font-size: 24px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container {
+    display: flex;
+    flex-direction: column;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container img.img {
+    display: none;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.text {
+    padding: 25px 0;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.text h3 {
+    font-size: 24px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.text p {
+    padding: 0 40px;
+    font-size: 16px;
+  }
+  main section#infos_consult {
+    padding: 0 50px;
+  }
+  main section#infos_consult h2 {
+    font-size: 24px;
+  }
+  main section#infos_consult div.infos_consult_container {
+    flex-direction: column;
+  }
+  main section#infos_consult div.infos_consult_container div.consult img {
+    width: 90px;
+    height: 90px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult h3 {
+    font-size: 24px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult p {
+    font-size: 16px;
+  }
+  main section#questions_consult {
+    margin: 25px 0;
+  }
+  main section#questions_consult div.question div.text h3 {
+    font-size: 20px;
+  }
+  main section#questions_consult div.question div.text p {
+    padding: 25px 25px 0 25px;
+    font-size: 14px;
+  }
+  main section#calendly h2 {
+    font-size: 24px;
+  }
+  main section#who h2 {
+    font-size: 24px;
+  }
+  main section#who div.who_container img {
+    width: 100%;
+    height: 250px;
+  }
+  main section#who div.who_container p {
+    font-size: 16px;
+  }
+  main section#quote div.quote_container {
+    padding: 50px 20px;
+  }
+  main section#quote div.quote_container img {
+    display: none;
+  }
+  main section#quote div.quote_container p {
+    margin: 0;
+    font-size: 20px;
+  }
+  main section#presentation div.presentation_container {
+    display: flex;
+    flex-direction: column;
+  }
+  main section#presentation div.presentation_container img.img {
+    display: none;
+  }
+  main section#presentation div.presentation_container div.text {
+    padding: 25px 0;
+  }
+  main section#presentation div.presentation_container div.text h3 {
+    font-size: 24px;
+  }
+  main section#presentation div.presentation_container div.text p {
+    padding: 0 40px;
+    font-size: 16px;
+  }
+  main section#contact {
+    padding: 0 0 50px 0;
+  }
+  main section#contact div.contact_form {
+    padding: 0;
+  }
+  main section#contact div.contact_form h2 {
+    font-size: 24px;
+  }
+  main section#contact div.contact_other {
+    padding: 0;
+  }
+  main section#contact div.contact_other h3 {
+    font-size: 20px;
+  }
+  main section#contact div.contact_other p.adress {
+    width: 50%;
+    font-size: 14px;
+  }
+  main section#contact div.contact_other div.adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main section#contact div.contact_other div.adress div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main section#contact div.contact_other div.adress iframe {
+    width: 300px;
+  }
+  main section#contact div.contact_other div.phone_mail {
+    flex-direction: column;
+  }
+  main section#contact div.contact_other div.phone_mail div {
+    margin: 5px 20px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  footer a.logo {
+    margin-bottom: 20px;
+  }
+  footer div.links {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
