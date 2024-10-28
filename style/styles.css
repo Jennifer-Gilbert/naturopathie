@@ -181,7 +181,7 @@ main section#about h2 {
   color: #264653;
 }
 main section#about p.text {
-  text-align: center;
+  text-align: justify;
   padding: 0 100px;
   margin-top: 50px;
   font-size: 18px;
