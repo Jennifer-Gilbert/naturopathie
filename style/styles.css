@@ -78,11 +78,14 @@ body main section#hero_all div.breadcrumb p {
 body main section.individuals_hero {
   background-image: url("../assets/particuliers-hero.png");
 }
-body main section.contact_hero {
+body main section.professionals_hero {
   background-image: url("../assets/particuliers-hero.png");
 }
 body main section.who_i_am_hero {
   background-image: url("../assets/qui_suis-je_hero.png");
+}
+body main section.contact_hero {
+  background-image: url("../assets/particuliers-hero.png");
 }
 
 header {
@@ -178,17 +181,11 @@ main section#about h2 {
   color: #264653;
 }
 main section#about p.text {
-  text-align: justify;
+  text-align: center;
   padding: 0 100px;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 18px;
   line-height: 1.5;
-  color: #264653;
-}
-main section#about p.signature {
-  padding: 40px 0;
-  font-size: 20px;
-  font-style: italic;
   color: #264653;
 }
 main section#cta_services {
@@ -390,7 +387,7 @@ main section#infos_consult div.infos_consult_container div.consult h3 {
 }
 main section#infos_consult div.infos_consult_container div.consult p {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #264653;
   border: 1px solid #264653;
@@ -422,7 +419,7 @@ main section#questions_consult div.question p {
   padding: 0 50px;
   text-align: justify;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 }
 main section#questions_consult div.question div.img {
@@ -484,6 +481,73 @@ main section#office div.infos_office div.adress div.text p {
   line-height: 1.5;
   color: #264653;
 }
+main section#quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  padding: 50px 150px;
+  color: #264653;
+}
+main section#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+main section#services h2 {
+  color: #264653;
+}
+main section#services div.services_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+main section#services div.services_container div.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 100px;
+  padding: 50px;
+  color: #ffffff;
+  background-color: #264653;
+  border-radius: 10px;
+}
+main section#services div.services_container div.service h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+main section#services div.services_container div.service ul {
+  list-style: disc;
+}
+main section#question_project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#question_project h2 {
+  color: #264653;
+}
+main section#question_project a {
+  padding: 20px 40px;
+  margin: 0 0 50px 0;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #264653;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+main section#question_project a:hover {
+  background-color: rgba(38, 70, 83, 0.8078431373);
+}
 main section#who {
   display: flex;
   flex-direction: column;
@@ -506,8 +570,7 @@ main section#who div.who_container img {
   margin-bottom: 50px;
   width: 350px;
   height: 350px;
-  background-color: red;
-  border-radius: 500px;
+  border-radius: 100%;
 }
 main section#who div.who_container p {
   text-align: justify;
@@ -516,7 +579,7 @@ main section#who div.who_container p {
   line-height: 1.5;
   color: #264653;
 }
-main section#quote {
+main section#quote2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -525,7 +588,7 @@ main section#quote {
   background-color: #264653;
   box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.2);
 }
-main section#quote div.quote_container {
+main section#quote2 div.quote_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,24 +596,24 @@ main section#quote div.quote_container {
   padding: 50px 300px;
   color: #ffffff;
 }
-main section#quote div.quote_container img {
+main section#quote2 div.quote_container img {
   width: 50px;
   padding: 0 0 80px 0;
 }
-main section#quote div.quote_container p {
+main section#quote2 div.quote_container p {
   margin-left: 20px;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.5;
 }
-main section#quote a {
+main section#quote2 a {
   margin-bottom: 50px;
   padding: 15px 30px;
   border-radius: 5px;
   background-color: #ffffff;
   transition: 0.3s;
 }
-main section#quote a:hover {
+main section#quote2 a:hover {
   background-color: rgba(255, 255, 255, 0.7529411765);
 }
 main section#presentation {
@@ -912,9 +975,6 @@ footer ul li a:hover {
   main section#about p.text {
     font-size: 16px;
   }
-  main section#about p.signature {
-    font-size: 18px;
-  }
   main section#cta_services {
     padding: 0 50px;
   }
@@ -1005,20 +1065,20 @@ footer ul li a:hover {
     flex-direction: column;
   }
   main section#who div.who_container img {
+    width: 250px;
+    height: 250px;
     margin-bottom: 50px;
-    width: 100%;
-    height: 300px;
   }
   main section#who div.who_container p {
     padding: 0;
   }
-  main section#quote div.quote_container {
+  main section#quote2 div.quote_container {
     padding: 50px 50px;
   }
-  main section#quote div.quote_container img {
+  main section#quote2 div.quote_container img {
     padding: 0 0 150px 0;
   }
-  main section#quote div.quote_container p {
+  main section#quote2 div.quote_container p {
     font-size: 22px;
   }
   main section#presentation div.presentation_container {
@@ -1068,9 +1128,6 @@ footer ul li a:hover {
   }
   main section#about p.text {
     font-size: 14px;
-  }
-  main section#about p.signature {
-    font-size: 16px;
   }
   main section#cta_services {
     padding: 0 50px;
@@ -1165,19 +1222,19 @@ footer ul li a:hover {
     font-size: 24px;
   }
   main section#who div.who_container img {
-    width: 100%;
+    width: 250px;
     height: 250px;
   }
   main section#who div.who_container p {
     font-size: 16px;
   }
-  main section#quote div.quote_container {
+  main section#quote2 div.quote_container {
     padding: 50px 20px;
   }
-  main section#quote div.quote_container img {
+  main section#quote2 div.quote_container img {
     display: none;
   }
-  main section#quote div.quote_container p {
+  main section#quote2 div.quote_container p {
     margin: 0;
     font-size: 20px;
   }
