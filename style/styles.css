@@ -1259,6 +1259,7 @@ footer ul li a:hover {
     font-size: 24px;
   }
   main section#about p.text {
+    padding: 0 10px;
     font-size: 14px;
   }
   main section#cta_services {
