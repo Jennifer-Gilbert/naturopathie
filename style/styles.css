@@ -738,6 +738,8 @@ main section#inspirations section#blog_posts div.posts_container img {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 main section#inspirations section#blog_posts div.posts_container div.content {
   display: flex;
@@ -747,6 +749,8 @@ main section#inspirations section#blog_posts div.posts_container div.content {
   text-align: center;
   color: #264653;
   border: 1px solid #264653;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 main section#inspirations section#blog_posts div.posts_container div.content h3 {
   width: 100%;
