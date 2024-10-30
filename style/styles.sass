@@ -330,7 +330,7 @@ main
         display: flex
         align-items: center
         justify-content: center
-        text-align: center
+        text-align: justify
         font-size: 20px
         padding: 50px 150px
         color: $blue
@@ -351,6 +351,8 @@ main
                 display: flex
                 flex-direction: column
                 justify-content: center
+                min-width: 300px
+                min-height: 220px
                 margin: 20px 100px
                 padding: 50px
                 color: $white
@@ -359,12 +361,17 @@ main
                 h3
                     text-align: center
                     margin-bottom: 20px
-                    font-size: 20px
+                    font-size: 30px
                     font-family: "Fira Sans", serif
                     font-weight: 400
                     color: $white
                 ul
+                    margin: 0 auto
+                    padding
                     list-style: disc
+                    li
+                        p
+                            font-weight: 400
     section#question_project
         display: flex
         flex-direction: column
@@ -750,9 +757,20 @@ footer
                         padding: 0 50px
         section#who
             padding: 0 0
-        section#quote
+        section#quote2
             div.quote_container
                 padding: 50px
+        section#quote
+            padding: 70px
+        section#services
+            div.services_container
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                div.service
+                    max-width: 40%
+                    max-height: 220px
         section#inspirations
             section#blog_posts
                 div.posts_container
@@ -1039,6 +1057,30 @@ footer
         section#calendly
             h2
                 font-size: 24px
+        // professionals.html
+        section#quote
+            padding: 40px
+            p
+                font-size: 16px
+        section#services
+            padding: 0
+            h2
+                font-size: 24px
+                padding: 20px 0
+            div.services_container
+                width: 100%
+                div.service
+                    min-width: 250px
+                    max-height: 220px
+                    h3
+                        font-size: 22px
+                    p
+                        font-size: 14px
+        section#question_project
+            h2
+                font-size: 24px
+            a
+                font-size: 16px
         // who_i_am.html
         section#who
             h2

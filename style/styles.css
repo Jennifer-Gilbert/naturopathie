@@ -489,7 +489,7 @@ main section#quote {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
   padding: 50px 150px;
   color: #264653;
@@ -514,6 +514,8 @@ main section#services div.services_container div.service {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 300px;
+  min-height: 220px;
   margin: 20px 100px;
   padding: 50px;
   color: #ffffff;
@@ -523,13 +525,17 @@ main section#services div.services_container div.service {
 main section#services div.services_container div.service h3 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Fira Sans", serif;
   font-weight: 400;
   color: #ffffff;
 }
 main section#services div.services_container div.service ul {
+  margin: 0 auto;
   list-style: disc;
+}
+main section#services div.services_container div.service ul li p {
+  font-weight: 400;
 }
 main section#question_project {
   display: flex;
@@ -996,8 +1002,21 @@ footer ul li a:hover {
   main section#who {
     padding: 0 0;
   }
-  main section#quote div.quote_container {
+  main section#quote2 div.quote_container {
     padding: 50px;
+  }
+  main section#quote {
+    padding: 70px;
+  }
+  main section#services div.services_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main section#services div.services_container div.service {
+    max-width: 40%;
+    max-height: 220px;
   }
   main section#inspirations section#blog_posts div.posts_container {
     display: flex;
@@ -1351,6 +1370,38 @@ footer ul li a:hover {
   }
   main section#calendly h2 {
     font-size: 24px;
+  }
+  main section#quote {
+    padding: 40px;
+  }
+  main section#quote p {
+    font-size: 16px;
+  }
+  main section#services {
+    padding: 0;
+  }
+  main section#services h2 {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+  main section#services div.services_container {
+    width: 100%;
+  }
+  main section#services div.services_container div.service {
+    min-width: 250px;
+    max-height: 220px;
+  }
+  main section#services div.services_container div.service h3 {
+    font-size: 22px;
+  }
+  main section#services div.services_container div.service p {
+    font-size: 14px;
+  }
+  main section#question_project h2 {
+    font-size: 24px;
+  }
+  main section#question_project a {
+    font-size: 16px;
   }
   main section#who h2 {
     font-size: 24px;
