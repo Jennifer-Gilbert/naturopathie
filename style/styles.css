@@ -519,7 +519,6 @@ main section#services div.services_container div.service {
   margin: 20px 100px;
   padding: 50px;
   color: #ffffff;
-  background-color: #264653;
   border-radius: 10px;
 }
 main section#services div.services_container div.service h3 {
@@ -536,6 +535,18 @@ main section#services div.services_container div.service ul {
 }
 main section#services div.services_container div.service ul li p {
   font-weight: 400;
+}
+main section#services div.services_container div.service1 {
+  background-color: #264653;
+}
+main section#services div.services_container div.service2 {
+  background-color: #abcc80;
+}
+main section#services div.services_container div.service3 {
+  background-color: #e76f51;
+}
+main section#services div.services_container div.service4 {
+  background-color: #ffd062;
 }
 main section#question_project {
   display: flex;
