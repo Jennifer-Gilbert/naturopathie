@@ -266,7 +266,7 @@ main section#about_naturo div.about_naturo_container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 30px 50px 30px;
 }
 main section#about_naturo div.about_naturo_container p {
   text-align: justify;
