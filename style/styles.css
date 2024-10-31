@@ -519,7 +519,6 @@ main section#services div.services_container div.service {
   margin: 20px 100px;
   padding: 50px;
   color: #ffffff;
-  background-color: #264653;
   border-radius: 10px;
 }
 main section#services div.services_container div.service h3 {
@@ -536,6 +535,18 @@ main section#services div.services_container div.service ul {
 }
 main section#services div.services_container div.service ul li p {
   font-weight: 400;
+}
+main section#services div.services_container div.service1 {
+  background-color: #264653;
+}
+main section#services div.services_container div.service2 {
+  background-color: #abcc80;
+}
+main section#services div.services_container div.service3 {
+  background-color: #e76f51;
+}
+main section#services div.services_container div.service4 {
+  background-color: #ffd062;
 }
 main section#question_project {
   display: flex;
@@ -738,6 +749,8 @@ main section#inspirations section#blog_posts div.posts_container img {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 main section#inspirations section#blog_posts div.posts_container div.content {
   display: flex;
@@ -747,6 +760,8 @@ main section#inspirations section#blog_posts div.posts_container div.content {
   text-align: center;
   color: #264653;
   border: 1px solid #264653;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 main section#inspirations section#blog_posts div.posts_container div.content h3 {
   width: 100%;

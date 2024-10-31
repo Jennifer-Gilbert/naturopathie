@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="content">
                     <h3>${article.title}</h3>
                     <p>${article.content.slice(0, 100)}...</p>
-                    <a href="article.html?id=${article.id}">Voir plus</a>
+                    <a href="article.html?id=${article.id}">Lire l'article</a>
                     <div class="date_readtime">
                         <p>${article.date}</p>
                         <p>${article.readTime}</p>
