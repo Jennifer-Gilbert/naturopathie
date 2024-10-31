@@ -399,18 +399,18 @@ main section#infos_consult div.infos_consult_container div.consult p {
   font-weight: 500;
   line-height: 1.5;
   color: #264653;
-  border: 1px solid #264653;
 }
 main section#infos_consult a.cta_consult {
   margin-top: 50px;
   padding: 10px 20px;
+  text-transform: uppercase;
   border-radius: 5px;
-  background-color: #264653;
+  background-color: #e76f51;
   color: #ffffff;
   transition: 0.3s;
 }
 main section#infos_consult a.cta_consult:hover {
-  background-color: rgba(38, 70, 83, 0.8078431373);
+  background-color: rgba(231, 111, 81, 0.5019607843);
 }
 main section#questions_consult {
   display: flex;
