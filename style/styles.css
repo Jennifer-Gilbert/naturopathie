@@ -1499,7 +1499,7 @@ footer ul li a:hover {
   main section#article_details {
     padding: 50px 50px;
   }
-  main section#article_details div.article_container p#article_content {
+  main section#article_details div.article_container p {
     padding: 20px 20px;
   }
   main section#contact {
