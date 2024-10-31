@@ -730,9 +730,9 @@ main section#presentation div.presentation_container div.text3 div.logos {
   justify-content: center;
 }
 main section#presentation div.presentation_container div.text3 div.logos img {
-  width: 100px;
-  height: 100px;
-  margin: 20px;
+  width: 70px;
+  height: 70px;
+  margin: 0 40px;
 }
 main section#inspirations {
   display: flex;
@@ -976,13 +976,16 @@ footer div.links {
 }
 footer div.links a {
   margin: 0 15px;
-  padding: 20px;
+  padding: 10px;
+  font-size: 20px;
   color: #ffffff;
-  background-color: #264653;
   transition: 0.3s;
 }
-footer div.links a:hover {
-  background-color: rgba(38, 70, 83, 0.8078431373);
+footer div.links a:nth-child(1) {
+  color: #498bc2;
+}
+footer div.links a:nth-child(2) {
+  color: #e02727;
 }
 footer ul {
   display: flex;
