@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -397,6 +401,17 @@ main section#infos_consult div.infos_consult_container div.consult p {
   color: #264653;
   border: 1px solid #264653;
 }
+main section#infos_consult a.cta_consult {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #264653;
+  color: #ffffff;
+  transition: 0.3s;
+}
+main section#infos_consult a.cta_consult:hover {
+  background-color: rgba(38, 70, 83, 0.8078431373);
+}
 main section#questions_consult {
   display: flex;
   flex-direction: column;
@@ -444,6 +459,7 @@ main section#calendly {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 80px;
 }
 main section#calendly h2 {
   color: #264653;
