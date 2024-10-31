@@ -855,6 +855,7 @@ main section#article_details div.article_container p {
   padding: 25px 100px;
   text-align: justify;
   font-size: 20px;
+  font-weight: 400;
   color: #264653;
 }
 main section#contact {
