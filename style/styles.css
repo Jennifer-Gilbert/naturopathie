@@ -851,8 +851,8 @@ main section#article_details div.article_container img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main section#article_details div.article_container p#article_content {
-  padding: 40px 100px;
+main section#article_details div.article_container p {
+  padding: 25px 100px;
   text-align: justify;
   font-size: 20px;
   color: #264653;

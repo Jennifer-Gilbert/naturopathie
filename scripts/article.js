@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector("#article_title").textContent = ARTICLE.title;
             document.querySelector("#article_image").src = ARTICLE.imgSrc;
             document.querySelector("#article_content").textContent = ARTICLE.content;
+            document.querySelector("#article_content2").textContent = ARTICLE.content2;
+            document.querySelector("#article_content3").textContent = ARTICLE.content3;
+            document.querySelector("#article_content4").textContent = ARTICLE.content4;
+            document.querySelector("#article_content5").textContent = ARTICLE.content5;
         } else {
             document.getElementById("article_details").innerHTML = "<p>Article introuvable</p>";
         }
