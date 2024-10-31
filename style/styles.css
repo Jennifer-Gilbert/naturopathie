@@ -541,7 +541,7 @@ main section#services div.services_container div.service {
 }
 main section#services div.services_container div.service h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-family: "Fira Sans", serif;
   font-weight: 400;
@@ -552,6 +552,7 @@ main section#services div.services_container div.service ul {
   list-style: disc;
 }
 main section#services div.services_container div.service ul li p {
+  font-size: 18px;
   font-weight: 400;
 }
 main section#services div.services_container div.service1 {
