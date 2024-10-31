@@ -469,16 +469,17 @@ main section#office {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  background-color: #264653;
 }
 main section#office h2 {
-  color: #264653;
+  color: #ffffff;
 }
 main section#office div.infos_office {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  margin-bottom: 50px;
 }
 main section#office div.infos_office iframe {
   margin: 0 50px;
@@ -494,13 +495,13 @@ main section#office div.infos_office div.adress div.text h3 {
   font-size: 32px;
   font-family: "Fira Sans", serif;
   font-weight: 400;
-  color: #264653;
+  color: #ffffff;
 }
 main section#office div.infos_office div.adress div.text p {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  color: #264653;
+  color: #ffffff;
 }
 main section#quote {
   display: flex;
