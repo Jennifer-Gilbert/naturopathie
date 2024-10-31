@@ -753,8 +753,8 @@ main section#inspirations section#blog_posts div.posts_container {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   row-gap: 30px;
-  -moz-column-gap: 200px;
-       column-gap: 200px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 main section#inspirations section#blog_posts div.posts_container div.article {
   display: flex;
